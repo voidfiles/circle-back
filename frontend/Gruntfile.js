@@ -378,6 +378,21 @@ module.exports = function (grunt) {
       ]
     },
 
+    buildcontrol: {
+      options: {
+        dir: 'dist',
+        commit: true,
+        push: true,
+        message: 'Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%'
+      },
+      pages: {
+        options: {
+          remote: 'git@github.com:voidfiles/circle-back.git',
+          branch: 'gh-pages'
+        }
+      }
+    },
+
     // Test settings
     karma: {
       unit: {
@@ -430,7 +445,8 @@ module.exports = function (grunt) {
     'uglify',
     'filerev',
     'usemin',
-    'htmlmin'
+    'htmlmin',
+    'buildcontrol'
   ]);
 
   grunt.registerTask('default', [
