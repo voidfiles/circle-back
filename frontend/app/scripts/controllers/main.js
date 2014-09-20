@@ -7,11 +7,10 @@
  * # MainCtrl
  * Controller of the frontendApp
  */
-angular.module('frontendApp')
-  .controller('MainCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+angular.module('frontendApp').controller('MainCtrl', function ($scope, $sce) {
+  $scope.content = window.Content;
+  $scope.trustUrl = function (url) {
+    return $sce.trustAsResourceUrl(url);
+  };
+
+});
