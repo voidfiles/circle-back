@@ -4,52 +4,101 @@
 
 var Entities = {
   1: {
+    id: 1,
     kind: 'person',
     name: 'Clay Shirky',
+    image_url: "http://www.worldchanging.com/postimages/article/7925_largearticlephoto.jpg",
+    bio: "Clay Shirky (born 1964) is an American writer, consultant and teacher on the social and economic effects of Internet technologies. He has a joint appointment at New York University (NYU) as a Distinguished Writer in Residence at the Arthur L. Carter Journalism Institute and Assistant Arts Professor in the New Media focused graduate Interactive Telecommunications Program (ITP).",
+    bio_source: 'Wikipedia',
+    facts: [{
+      content: 'He is a memeber of the Wikimedia Foundation',
+      source: 'http://wikimediafoundation.org/wiki/Advisory_Board#Clay_Shirky',
+    }],
+    content: [0],
+    external_sources: [{
+      username: '@cshirky',
+      network: 'twitter',
+      link: 'https://twitter.com/cshirky'
+    }]
   },
   2: {
+    id: 2,
     kind: 'person',
     name: 'Nick Carr',
+    image_url: "http://www.newscientist.com/blogs/culturelab/NicholasCarr2.jpg",
+    bio: "Nicholas G. Carr is an American writer who has published books and articles on technology, business, and culture. His book The Shallows: What the Internet Is Doing to Our Brains was a finalist for the 2011 Pulitzer Prize in General Nonfiction.",
+    content: [0],
+    facts: [{
+      content: 'He is a member of the Editorial Board of Advisors of Encyclopædia Britannica',
+      source: 'http://blogs.britannica.com/blog/main/2008/01/nick-carr-david-gelernter-and-michael-wesch-new-britannica-advisors/'
+    }],
+    external_sources: [{
+      username: '@roughtype',
+      network: 'twitter',
+      link: 'https://twitter.com/roughtype'
+    }]
   },
   3: {
+    id: 3,
     kind: 'organization',
     name: 'NPR',
     favicon: 'http://www.npr.org/favicon.ico'
   },
   4: {
+    id: 4,
     kind: 'website',
     url: 'http://www.roughtype.com/',
     favicon: 'http://www.roughtype.com/favicon.ico',
     name: 'Rough Type'
   },
   5: {
+    id: 5,
     kind: 'person',
     name: 'Ken Barcus',
   },
   6: {
+    id: 6,
     kind: 'person',
     name: 'Merlin Mann',
+    image_url: 'http://sfsketchfest.com/x/wp-content/uploads/2013/12/0822-merlin.jpg',
+    bio: "Mann is the founder and writer of 43 Folders, a blog about \"finding the time and attention to do your best creative work.\"",
+    facts: [{
+      content: "He lives in San Francisco",
+      source: 'http://en.wikipedia.org/wiki/Merlin_Mann',
+    }],
+    content: [2],
+    external_sources: [{
+      username: '@hotdogsladies',
+      network: 'twitter',
+      link: 'https://twitter.com/hotdogsladies'
+    }]
   },
   7: {
+    id: 7,
     kind: 'website',
     name: '43 Folders',
-    url: 'http://www.43folders.com'
+    url: 'http://www.43folders.com',
+    favicon: 'http://www.43folders.com/favicon.ico',
   },
   8: {
+    id: 8,
     kind: 'person',
     name: 'Ira Glass',
   },
   9: {
+    id: 9,
     kind: 'website',
     name: 'Youtube',
     url: 'Youtube',
     favicon: 'https://www.youtube.com/favicon.ico'
   },
   10: {
+    id: 10,
     kind: 'person',
     name: 'Dr. Seuss',
   },
   11: {
+    id: 11,
     kind: 'website',
     name: 'Goodreads',
     url: 'http://goodreads.com',
