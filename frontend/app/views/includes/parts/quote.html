@@ -1,0 +1,4 @@
+<blockquote ng-repeat='quote in item.parts' ng-class='{$even: "blockquote-reverse"}'>
+  <p>{{ quote.content }}</p>
+  <footer><a href='#/entity/{{quote.source.id}}/'>{{ quote.source.name }}</a></footer>
+</blockquote>
